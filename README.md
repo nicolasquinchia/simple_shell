@@ -1,7 +1,5 @@
 # Simple Shell
-## THE GATES OF SHELL
-<p align="center">
-<h2>THE GATES OF SHELL</h2>
+<center><h2>THE GATES OF SHELL</h2></center>
 
 <p align="center">
 <img src="https://pbs.twimg.com/media/CfyCyguWEAA6JOt.jpg">
