@@ -1,7 +1,7 @@
 # Simple Shell
 
 <p align="center">
-<h2>THE GATES OF SHELL</h2>
+<FONT SIZE=6><b>THE GATES OF SHELL</b></font>
 <br><br>
 <img src="https://pbs.twimg.com/media/CfyCyguWEAA6JOt.jpg">
 </p>
