@@ -1,17 +1,14 @@
 #include "doom.h"
 /**
  * exe_new_process - Create a new process and execute
- * @args: arguments and name of the process to execute
+ * @args: Array of pointers with arguments taken by getline
  *
  * Return: void
  */
-void exe_new_process(char *buffer) 
+void exe_new_process(char **args)
 {
 	pid_t child_id;
-	extern char **environ;
-	char **args;
 
-	args = str_to_2d(buffer);
 	child_id = fork();
 	if (child_id < 0)
 	{

@@ -2,13 +2,13 @@
 /**
  * token_count - Count the number of words on a string
  * @str: string to split and count the words
+ * @del: strin whit the caracter delimiters
  *
  * Return: number of words
  */
-unsigned int token_count(char *str)
+unsigned int token_count(char *str, char del[])
 {
 	char *token;
-	char del[] = " \n\t";
 	unsigned int m;
 
 	token = strtok(str, del);
@@ -25,13 +25,13 @@ unsigned int token_count(char *str)
  * @str: String to split
  * @splt_str: pointer with the memory space allocated fo the strs
  * @m: number of words to split
+ * @del: strin whit the caracter delimiters
  *
  * Return: Double pointer with the adress of the sub-strings
  */
-char **split_token(char **splt_str, char *str, unsigned int m)
+char **split_token(char **splt_str, char *str, unsigned int m, char del[])
 {
 	char *token;
-	char del[] = " \n\t";
 	unsigned int p_idx;
 
 	token = strtok(str, del);
@@ -61,10 +61,11 @@ char **split_token(char **splt_str, char *str, unsigned int m)
 /**
  * str_to_2d - Split a string in sub strings
  * @buff_str: String to split
+ * @del: strin whit the caracter delimiters
  *
  * Return: Double pointer with the adress of the sub-strings
  */
-char **str_to_2d(char *buff_str)
+char **str_to_2d(char *buff_str, char del[])
 {
 	char *tmp_len, *tmp_splt, **splt_str;
 	unsigned int m;
@@ -82,7 +83,7 @@ char **str_to_2d(char *buff_str)
 		free(tmp_len);
 		exit(1);
 	}
-	m = token_count(tmp_len);
+	m = token_count(tmp_len, del);
 	tmp_len = '\0';
 	free(tmp_len);
 	splt_str = malloc((m * sizeof(char *)) + 1);
@@ -92,7 +93,7 @@ char **str_to_2d(char *buff_str)
 		free(tmp_splt);
 		exit(1);
 	}
-	splt_str = split_token(splt_str, tmp_splt, m);
+	splt_str = split_token(splt_str, tmp_splt, m, del);
 	tmp_splt = '\0';
 	free(tmp_splt);
 	return (splt_str);
