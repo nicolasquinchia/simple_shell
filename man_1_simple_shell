@@ -1,0 +1,35 @@
+.TH HSH 1 "16 April 2020" "1" "Simple Shell man page"
+.SH NAME
+.B hsh
+- A simple UNIX command interpreter.
+.SH SYNOPSIS
+.B ./hsh
+.SH DESCRIPTION
+This program is a simple shell. Contains simple features made with holberton guidelines.
+.SS Overview
+A software that takes input from the promp, interprets them, and run anoother command. It executes compiling all .c files in the repository.
+.SS Path Search
+ This shell first search for an executable by the given name in the PATH of env. Then, search for builtin commands using the same name.
+
+.SH MODES
+.B hsh
+Interactive mode
+.SS
+EXAMPLE:
+$ ls -l
+.B ./hsh
+Non-interactive mode
+.SS
+EXAMPLE:
+$ echo "ls -l" | ./hsh
+
+.SH BUILT-IN COMMANDS
+.B env
+- prints environment
+.B exit
+- exits the shell
+
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Aldo Nicolás Quinchia, Camilo Andrés Pulgarin.
