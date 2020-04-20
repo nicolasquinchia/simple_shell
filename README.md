@@ -14,4 +14,53 @@ But before the execution there are functinos that check every character typed to
 
 ## Getting Started
 
-To install the 
+Here are the steps to execute the Shell
+
+* Git clone all this respository to your local directory.
+
+```Bash
+~ $ git clone https://github.com/nicolasquinchia/simple_shell.git
+```
+* Compile the program executing the `compile_all` file.
+```Bash
+~ $ ./compile_all
+```
+* Execute the shell.
+```Bash
+~ $ ./hsh
+```
+### Compilation
+The compilation process is make with the script execution `compile_all` that contain the following statement:
+```Bash
+gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+```
+## Files
+In the following table is brief description of each file in the repository.
+
+File Name | Description
+--------- | -----------
+Pending | Content from cell 2
+Pending | Content in the second column
+
+## Syntax
+
+### Usage 
+* Execute the ./compile_all script to have the executable file hsh
+* Enter custom shell by typing "./hsh". You should be prompted with a #cisfun$
+* Type a command and press "Enter"
+* Appropriate output will appear next to it the prompt awaits the next command
+* Exit shell by typing "ctrl D"
+
+### Commands
+
+The shell works giving commands in the interface, the commands take in the following syntax: 
+
+```Bash
+#cisfun$ <command> <flags or options> <argument 1> <argument 2> ...
+```
+
+## Environment
+
+The custom shell was developed and tested on Ubuntu 14.04 LTS via Vagrant in VirtualBox.
+
+
