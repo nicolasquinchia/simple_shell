@@ -7,11 +7,11 @@
  */
 char *_is_ascii(char *buffer)
 {
-	unsigned int i;
+	unsigned int i = 0;
 
-	while (buffer[i] != '\0')
+	while (buffer[i] != '\n')
 	{
-		if (buffer[i] > 126 || buffer[i] < 32)
+		if (buffer[i] >= 126 || buffer[i] <= 33)
 		{
 			return ('\0');
 		}
