@@ -104,8 +104,8 @@ $
 
 ## Authors
 
-Nicolas Quinchia Osorio [github: nicolasquinchia][1]
-Camilo Andres Pulgarín [github: camilo620][2]
+* Nicolas Quinchia Osorio [github: nicolasquinchia][1]
+* Camilo Andres Pulgarín [github: camilo620][2]
 
 [1]: https://github.com/nicolasquinchia
 [2]: https://github.com/camilo620
